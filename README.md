@@ -1,11 +1,25 @@
-# moshii-PrivEsc
+
+# MOSHII-PrivEsc :triangular_flag_on_post: Windows Privilege Escalation Toolkit
+
+![Windows Privilege Escalation](https://img.shields.io/badge/Windows-PrivEsc-red)
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A comprehensive Windows privilege escalation script that automates common checks for system misconfigurations and vulnerabilities.
+
+## :rocket: Quick Start
+
+```powershell
+# Download and execute (one-liner)
+powershell -ep bypass -c "iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/yourrepo/moshii-PrivEsc/main/m0sh11-PrivEsc.ps1')"
+
+# Or for local execution
+powershell -ep bypass -c ". .\m0sh11-PrivEsc.ps1"
 Don't waste your time and gather :
-1- Download/Copy My Script.
-2-  powershell -ep bypass -c ". .\m0sh11-PrivEsc.ps1"
 
 [*] System Information
   Hostname: MOSHII-PrivEsc
-  OS: Microsoft Windows 11 Pro (Build 20255)
+  OS: Microsoft Windows 11 Pro (Build 2025)
   Architecture: 64-bit
   Current User: Moshii
   Installed Hotfixes: KB5056578, KB5031988.
@@ -35,7 +49,7 @@ Don't waste your time and gather :
   [VULNERABLE] HKLM:\SOFTWARE\....\.....\......\.....
 
 [*] Checking dangerous privileges...
-  [SAFE] No dangerous privileges found
+  [SAFE] No dangerous privileges found   <-- "Bad Luck :D"
 
 [*] Scan completed at: 00/00/2025 00:00:00
 [!] Always validate findings manually!
